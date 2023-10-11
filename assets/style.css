@@ -1,0 +1,95 @@
+/*start default rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*end default rules*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousal {
+  border: 3px solid #eee;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  font-size: 120px;
+  height: 100%;
+  display: flex;
+  width: 400%;
+  border: 1px solid red;
+  transition: all 0.3s;
+}
+
+.slider div {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .first {
+  color: white;
+  background-color: #14084d;
+}
+
+.slider .third{
+  color: white;
+  background-color: #14084d;
+
+}
+.slider .second{
+  color: white;
+  background-color: #043f0e;
+}
+.slider .fourth {
+  color: white;
+  background-color: #043f0e;
+
+}
+
+
+.arrows .arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrows .arrow .icon {
+  font-size: 50px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrows ul {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+}
+
+.arrows ul li {
+  width: 17px;
+  height: 17px;
+  border: 3px solid #696767;
+  border-radius: 45px;
+  margin: 10px;
+  background-color: #696767;
+  cursor: pointer;
+}
+
